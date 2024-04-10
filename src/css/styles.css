@@ -44,22 +44,6 @@
   border-radius: 8px 8px 8px 8px;
 }
 
-.button {
-  background-color: #4E75FF;
-  width: Hug (91px)px;
-  height: Hug (40px)px;
-  padding: 8px 16px 8px 16px;
-  gap: 10px;
-  border-radius: 8px 8px 8px 8px;
-  opacity: 0px;
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 24px;
-  letter-spacing: 0.04em;
-  text-align: left;
-  color: #FFFFFF;
-}
-
 .gallery {
   display: flex;
   flex-wrap: wrap;
@@ -109,4 +93,27 @@ img {
   100% {
     transform: rotate(360deg);
   }
+}
+
+.button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button:hover {
+  background-color: #0056b3;
+}
+
+.custom-class {
+  margin: 0 auto;
+  margin-top: 32px;
 }

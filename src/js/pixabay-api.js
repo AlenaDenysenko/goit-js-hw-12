@@ -1,9 +1,7 @@
 const apiKey = '43242010-d57d11c2b31adad8bcda7c968';
 
-const loader = document.getElementById('loader');
-
-export async function fetchImages(query) {
-  const url = `https://pixabay.com/api/?key=${apiKey}&q=${query}&image_type=photo&orientation=horizontal&safesearch=true`;
+export async function fetchImages(query, page = 1, perPage = 15) {
+  const url = `https://pixabay.com/api/?key=${apiKey}&q=${query}&image_type=photo&orientation=horizontal&safesearch=true&page=${page}&per_page=${perPage}`;
   
   try {
     const response = await fetch(url);
@@ -17,3 +15,4 @@ export async function fetchImages(query) {
     return [];
   }
 }
+

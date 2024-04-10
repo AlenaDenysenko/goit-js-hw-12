@@ -42,4 +42,4 @@ function createImageCard(image) {
   card.appendChild(cardInfo);
 
   return card;
-};
+}
